@@ -150,7 +150,17 @@ class _IslamicCategoriesViewState extends State<IslamicCategoriesView> {
                           Expanded(
                             flex: 1,
                             child: ReusableContainer(
-                              onPress: () {},
+                              onPress: () {
+                                   Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => CategoryDetailsView(
+                                      category: "Islamic",
+                                      subCategory: "Fiqah",
+                                    ),
+                                  ),
+                                );
+                              },
                               icon: "assets/images/fiqqa_icon.png",
                               title: "fiqqa Kutab",
                             ),
@@ -168,7 +178,17 @@ class _IslamicCategoriesViewState extends State<IslamicCategoriesView> {
                           Expanded(
                             flex: 1,
                             child: ReusableContainer(
-                              onPress: () {},
+                              onPress: () {
+                                  Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => CategoryDetailsView(
+                                      category: "Islamic",
+                                      subCategory: "Fatwa",
+                                    ),
+                                  ),
+                                );
+                              },
                               icon: "assets/images/fatwa_icon.png",
                               title: "Fatwa Kutab",
                             ),
