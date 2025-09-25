@@ -71,14 +71,20 @@ class _BooksDetailsViewState extends State<BooksDetailsView> {
                           ),
                         ),
                         const SizedBox(height: 10),
-                        Text(
-                          widget.book.bookDescription,
-                          style: GoogleFonts.dmSans(
-                            color: Colors.black,
-                            fontSize: 12,
-                            fontWeight: FontWeight.w300,
+                        SizedBox(
+                          height: 120, // yahan apni desired choti height do
+                          child: SingleChildScrollView(
+                            child: Text(
+                              widget.book.bookDescription,
+                              style: GoogleFonts.dmSans(
+                                color: Colors.black,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w300,
+                              ),
+                            ),
                           ),
                         ),
+
                         const SizedBox(height: 10),
                       ],
                     ),
