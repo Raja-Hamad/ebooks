@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "467475097931",
+    "project_id": "ebooks-634b9",
+    "storage_bucket": "ebooks-634b9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467475097931:android:4ef38c112e50847fd4e0ce",
+        "android_client_info": {
+          "package_name": "com.hamad.ebooks"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt0-gSlDTmhRejtMLmmGaZHtuEVTgcqoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
