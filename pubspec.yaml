@@ -51,6 +51,10 @@ dependencies:
   another_flushbar: ^1.12.32
   dotted_border: ^3.1.0
   syncfusion_flutter_pdfviewer: ^31.1.19
+  flutter_qiblah: ^3.1.0+1
+  geolocator: ^13.0.4
+  permission_handler: ^12.0.1
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:

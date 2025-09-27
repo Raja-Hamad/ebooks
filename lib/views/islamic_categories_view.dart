@@ -1,5 +1,6 @@
 import 'package:ebooks/utils/appstyles.dart';
 import 'package:ebooks/views/category_details_view.dart';
+import 'package:ebooks/views/qiblah_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -36,32 +37,52 @@ class _IslamicCategoriesViewState extends State<IslamicCategoriesView> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Example: Headline with 1-2 highlighted words
-                    RichText(
-                      text: TextSpan(
-                        style: GoogleFonts.dmSans(
-                          fontSize: 28,
-                          color: Colors.white,
-                          height: 1.1,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        RichText(
+                          text: TextSpan(
+                            style: GoogleFonts.dmSans(
+                              fontSize: 28,
+                              color: Colors.white,
+                              height: 1.1,
+                            ),
+                            children: [
+                              TextSpan(
+                                text: "Select ",
+                                style: GoogleFonts.dmSans(
+                                  fontSize: 28,
+                                  color: Colors.white, // highlighted
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              TextSpan(
+                                text: "Category",
+                                style: GoogleFonts.dmSans(
+                                  fontSize: 28,
+                                  color: Appstyles.primaryColor2, // highlighted
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
-                        children: [
-                          TextSpan(
-                            text: "Select ",
-                            style: GoogleFonts.dmSans(
-                              fontSize: 28,
-                              color: Colors.white, // highlighted
-                              fontWeight: FontWeight.bold,
-                            ),
+                        GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=> QiblahScreen()));
+                          },
+                          child: Column(
+                            children: [
+                              Icon(Icons.directions,color: Colors.white),
+                              Text("Qibla",
+                              style: GoogleFonts.dmSans(color: Colors.white,
+                              fontSize: 14,
+                              fontWeight: FontWeight.bold),)
+                            ],
                           ),
-                          TextSpan(
-                            text: "Category",
-                            style: GoogleFonts.dmSans(
-                              fontSize: 28,
-                              color: Appstyles.primaryColor2, // highlighted
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ],
-                      ),
+                        )
+                      ],
                     ),
 
                     const SizedBox(height: 18),

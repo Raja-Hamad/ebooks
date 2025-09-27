@@ -1,9 +1,9 @@
 import 'package:ebooks/firebase_options.dart';
-import 'package:ebooks/views/add_book_view.dart';
 import 'package:ebooks/views/splash_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();

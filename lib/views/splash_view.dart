@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ebooks/views/bottom_nav_bar_view.dart';
 import 'package:ebooks/views/dashboard_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -27,7 +28,7 @@ class _SplashViewState extends State<SplashView> {
     await Future.delayed(const Duration(seconds: 3)); // optional splash delay
    
 
-  Get.offAll(DashboardView());
+  Get.offAll(BottomNavBarView());
   }
 
   @override
