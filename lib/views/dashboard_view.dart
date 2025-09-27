@@ -1,4 +1,5 @@
 import 'package:ebooks/utils/appstyles.dart';
+import 'package:ebooks/views/category_details_view.dart';
 import 'package:ebooks/views/islamic_categories_view.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -89,9 +90,8 @@ class _DashboardViewState extends State<DashboardView> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                    builder: (context) => IslamicCategoriesView(
-                                    
-                                    ),
+                                    builder: (context) =>
+                                        IslamicCategoriesView(),
                                   ),
                                 );
                               },
@@ -103,7 +103,17 @@ class _DashboardViewState extends State<DashboardView> {
                           Expanded(
                             flex: 1,
                             child: ReusableContainer(
-                              onPress: () {},
+                              onPress: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => CategoryDetailsView(
+                                      category: "Motivational",
+                                      subCategory: "Motivational",
+                                    ),
+                                  ),
+                                );
+                              },
                               icon: "assets/images/motivational_icon.png",
                               title: "Motivational Books",
                             ),
