@@ -218,7 +218,17 @@ class _IslamicCategoriesViewState extends State<IslamicCategoriesView> {
                           Expanded(
                             flex: 1,
                             child: ReusableContainer(
-                              onPress: () {},
+                              onPress: () {
+                                 Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => CategoryDetailsView(
+                                      category: "Islamic",
+                                      subCategory: "Darsi",
+                                    ),
+                                  ),
+                                );
+                              },
                               icon: "assets/images/darsi_icon.png",
                               title: "Darsi Kutab",
                             ),
